@@ -1,5 +1,6 @@
 package com.example.sfera_ed
 
+import android.graphics.Color
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -23,6 +24,13 @@ class People_adapter : RecyclerView.Adapter<People_adapter.People_holder>(){
                 .into(peopleImg)
 
             peopleName.text = people.name
+
+            subButton.setOnClickListener{
+                if (subButton.text.equals("Subscribe")) {subButton.text = "Unsubscribe"
+                subButton.setTextColor(Color.parseColor("#A0A0A0"))}
+                else {subButton.text = "Subscribe"
+                    subButton.setTextColor(Color.parseColor("#9575CD"))}
+            }
 
 //            binding.subButton.setOnClickListener{
 //                if (subButton.text.equals("@string/unsubscribe")) subButton.text == "@string/subscribe"
