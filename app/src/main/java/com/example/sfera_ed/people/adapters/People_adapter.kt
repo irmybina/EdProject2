@@ -1,4 +1,4 @@
-package com.example.sfera_ed
+package com.example.sfera_ed.people.adapters
 
 import android.graphics.Color
 import android.view.LayoutInflater
@@ -6,7 +6,9 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
+import com.example.sfera_ed.R
 import com.example.sfera_ed.databinding.PeopleItemBinding
+import com.example.sfera_ed.people.models.People
 
 class People_adapter : RecyclerView.Adapter<People_adapter.People_holder>(){
     val peopleList = ArrayList<People>()

@@ -1,10 +1,12 @@
-package com.example.sfera_ed
+package com.example.sfera_ed.profile.adapters
 
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.example.sfera_ed.R
 import com.example.sfera_ed.databinding.ChroniclesCardItemBinding
+import com.example.sfera_ed.profile.models.Chronicles_card
 
 class Chronicles_card_adapter : RecyclerView.Adapter<Chronicles_card_adapter.Chronicles_card_holder>(){
     val chroniclesCardList = ArrayList<Chronicles_card>()

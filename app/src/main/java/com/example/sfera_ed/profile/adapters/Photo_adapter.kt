@@ -1,10 +1,12 @@
-package com.example.sfera_ed
+package com.example.sfera_ed.profile.adapters
 
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.example.sfera_ed.R
 import com.example.sfera_ed.databinding.PhotoItemBinding
+import com.example.sfera_ed.profile.models.Photo
 
 class Photo_adapter : RecyclerView.Adapter<Photo_adapter.Photo_holder>() {
     val photoList = ArrayList<Photo>()
@@ -21,7 +23,7 @@ class Photo_adapter : RecyclerView.Adapter<Photo_adapter.Photo_holder>() {
         return Photo_holder(view)
     }
 
-    override fun onBindViewHolder(holder: Photo_adapter.Photo_holder, position: Int) {
+    override fun onBindViewHolder(holder: Photo_holder, position: Int) {
         holder.bind(photoList[position])
     }
 

@@ -1,4 +1,4 @@
-package com.example.sfera_ed
+package com.example.sfera_ed.people
 
 
 import android.os.Bundle
@@ -9,6 +9,8 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
 
 import com.example.sfera_ed.databinding.FragmentPeopleBinding
+import com.example.sfera_ed.people.adapters.People_adapter
+import com.example.sfera_ed.people.models.People
 
 class PeopleFragment : Fragment() {
 

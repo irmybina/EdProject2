@@ -2,14 +2,10 @@ package com.example.sfera_ed
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.EditText
-import android.widget.ImageView
-import android.widget.TextView
-import androidx.recyclerview.widget.GridLayoutManager
-import androidx.recyclerview.widget.LinearLayoutManager
-import com.bumptech.glide.Glide
 import com.example.sfera_ed.databinding.ActivityMainBinding
-import com.example.sfera_ed.databinding.FragmentProfileBinding
+import com.example.sfera_ed.profile.adapters.Chronicles_card_adapter
+import com.example.sfera_ed.profile.adapters.Moment_adapter
+import com.example.sfera_ed.profile.adapters.Photo_adapter
 
 class MainActivity : AppCompatActivity() {
 

@@ -1,4 +1,4 @@
-package com.example.sfera_ed;
+package com.example.sfera_ed.profile;
 
 import android.content.Context;
 

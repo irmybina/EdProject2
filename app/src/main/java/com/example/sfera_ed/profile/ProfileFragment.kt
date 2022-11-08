@@ -1,4 +1,4 @@
-package com.example.sfera_ed
+package com.example.sfera_ed.profile
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -8,8 +8,14 @@ import android.view.ViewGroup
 import androidx.navigation.Navigation
 import androidx.recyclerview.widget.GridLayoutManager
 import com.bumptech.glide.Glide
-import com.example.sfera_ed.databinding.ActivityMainBinding
+import com.example.sfera_ed.R
 import com.example.sfera_ed.databinding.FragmentProfileBinding
+import com.example.sfera_ed.profile.adapters.Chronicles_card_adapter
+import com.example.sfera_ed.profile.adapters.Moment_adapter
+import com.example.sfera_ed.profile.adapters.Photo_adapter
+import com.example.sfera_ed.profile.models.Chronicles_card
+import com.example.sfera_ed.profile.models.Moment
+import com.example.sfera_ed.profile.models.Photo
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -20,7 +26,8 @@ class ProfileFragment : Fragment() {
     lateinit var bindingClass : FragmentProfileBinding
     private val image = "https://i.pinimg.com/originals/a8/87/03/a8870315e9d5d084722ff9c1ab5d2bee.jpg"
     private val adapter_chronicles = Chronicles_card_adapter()
-    private val chroniclesCardsList = listOf(R.drawable.photo_1_q,
+    private val chroniclesCardsList = listOf(
+        R.drawable.photo_1_q,
         R.drawable.photo_2_q,
         R.drawable.photo_3_q,
         R.drawable.photo_4_q,
@@ -31,7 +38,8 @@ class ProfileFragment : Fragment() {
         R.drawable.photo_5_q,
         R.drawable.photo_6_q,
         R.drawable.photo_7_q,
-        R.drawable.photo_8_q)
+        R.drawable.photo_8_q
+    )
     private var chroniclesCardIndex = 0
 
     private val adapter_moments = Moment_adapter()
@@ -46,10 +54,12 @@ class ProfileFragment : Fragment() {
     private var momentIndex = 0
 
     private val adapter_photoes = Photo_adapter()
-    private val photoesList = listOf(R.drawable.photo_1,
+    private val photoesList = listOf(
+        R.drawable.photo_1,
         R.drawable.photo_2,
         R.drawable.photo_3,
-        R.drawable.photo_3)
+        R.drawable.photo_3
+    )
     private var photoesIndex = 0
 
 

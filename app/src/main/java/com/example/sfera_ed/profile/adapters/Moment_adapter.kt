@@ -1,10 +1,12 @@
-package com.example.sfera_ed
+package com.example.sfera_ed.profile.adapters
 
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.example.sfera_ed.R
 import com.example.sfera_ed.databinding.MomentItemBinding
+import com.example.sfera_ed.profile.models.Moment
 
 class Moment_adapter : RecyclerView.Adapter<Moment_adapter.Moment_holder>(){
     val momentList = ArrayList<Moment>()
@@ -21,7 +23,7 @@ class Moment_adapter : RecyclerView.Adapter<Moment_adapter.Moment_holder>(){
         return Moment_holder(view)
     }
 
-    override fun onBindViewHolder(holder: Moment_adapter.Moment_holder, position: Int) {
+    override fun onBindViewHolder(holder: Moment_holder, position: Int) {
         holder.bind(momentList[position])
     }
 
