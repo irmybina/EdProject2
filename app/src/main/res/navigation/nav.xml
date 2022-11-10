@@ -18,5 +18,9 @@
         android:id="@+id/peopleFragment"
         android:name="com.example.sfera_ed.people.PeopleFragment"
         android:label="fragment_people"
-        tools:layout="@layout/fragment_people" />
+        tools:layout="@layout/fragment_people" >
+        <action
+            android:id="@+id/go_to_profile"
+            app:destination="@id/profileFragment" />
+    </fragment>
 </navigation>

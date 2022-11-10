@@ -1,7 +1,11 @@
 package com.example.sfera_ed
 
+import android.content.Context
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuInflater
+import android.widget.SearchView
 import com.example.sfera_ed.databinding.ActivityMainBinding
 import com.example.sfera_ed.profile.adapters.Chronicles_card_adapter
 import com.example.sfera_ed.profile.adapters.Moment_adapter
@@ -99,5 +103,29 @@ class MainActivity : AppCompatActivity() {
 ////                momentIndex++
 ////            }
 //        }
+
+    }
+
+//    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+//
+//        menuInflater.inflate(R.menu.people_menu, menu)
+//        val item = menu?.findItem(R.id.app_bar_search)
+//        val searchView = item?.actionView as SearchView
+//        searchView.setOnQueryTextListener(object : SearchView.OnQueryTextListener{
+//            override fun onQueryTextSubmit(p0: String?): Boolean {
+//                TODO("Not yet implemented")
+//            }
+//
+//            override fun onQueryTextChange(p0: String?): Boolean {
+//                TODO("Not yet implemented")
+//            }
+//
+//        })
+//
+//        return super.onCreateOptionsMenu(menu)
+//    }
+
+    public fun getContext() : Context{
+        return applicationContext
     }
 }
