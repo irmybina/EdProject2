@@ -9,7 +9,7 @@ import com.example.sfera_ed.people.storage.PeopleStorage
 class PeopleViewModel : ViewModel() {
     private val adapter_people = People_adapter()
     private val peopleStorage = PeopleStorage()
-    private val peopleList = peopleStorage.getPeople()
+//    private val peopleList = peopleStorage.getPeople()
 
     init {
         Log.i("people", "vm init")
@@ -20,13 +20,13 @@ class PeopleViewModel : ViewModel() {
         super.onCleared()
     }
 
-    fun peopleListStart() : List<People>{
-        for (p in peopleList) {
-            adapter_people.addPeople(p)
-            Log.i("people", "prsn added")
-
-        }
-        return peopleList
-    }
+//    fun peopleListStart() : List<People>{
+//        for (p in peopleList) {
+//            adapter_people.addPeople(p)
+//            Log.i("people", "prsn added")
+//
+//        }
+//        return peopleList
+//    }
 
 }

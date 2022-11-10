@@ -21,11 +21,11 @@ import kotlin.collections.ArrayList
 class PeopleFragment : Fragment() {
 
     lateinit var bindingClass: FragmentPeopleBinding
-    private val adapter_people = People_adapter()
-    private val peopleStorage = PeopleStorage()
-//    private val peopleList = peopleStorage.getPeople()
-    private lateinit var tempArrayList : ArrayList<People>
-    private var peopleIndex = 0
+//    private val adapter_people = People_adapter()
+//    private val peopleStorage = PeopleStorage()
+////    private val peopleList = peopleStorage.getPeople()
+////    private lateinit var tempArrayList : ArrayList<People>
+////    private var peopleIndex = 0
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -52,7 +52,7 @@ class PeopleFragment : Fragment() {
 //        }
 
         initial()
-        tempArrayList = arrayListOf<People>()
+//        tempArrayList = arrayListOf<People>()
 //        tempArrayList.addAll(peopleList)
 
         return bindingClass.root
